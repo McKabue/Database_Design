@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Timothy_Anondo.exe" version="1.0.0.2" publicKeyToken="0a79f57b2491e442" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Timothy_Anondo" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Timothy_Anondo.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.dll" size="5196496">
+      <assemblyIdentity name="EntityFramework" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>7W69dJBS+QGPZplnGuVGmt7fCGz4sb1CVrvpxOf2/wU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.SqlServer.dll" size="621264">
+      <assemblyIdentity name="EntityFramework.SqlServer" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ob9snjgg6D9D6fIN19mwozYqkxRvCv4LEzAYXi1RsMs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="457216">
+      <assemblyIdentity name="MySql.Data" version="6.9.7.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Glrei6GAe8HbvJIBGNBEWTg+dDds0IYH3b/trf/SHxo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.Entity.EF6.dll" size="369664">
+      <assemblyIdentity name="MySql.Data.Entity.EF6" version="6.9.7.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vyrc8GKJBohjYOI4i9ce4Qw5Z2mADV22MgJM0LzN8So=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="520192">
+      <assemblyIdentity name="Newtonsoft.Json" version="7.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>nsosXtGHteExnDWaq/g4KZITHv4YVLiZwjqT/iJ0luM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Timothy_Anondo.exe" size="37856">
+      <assemblyIdentity name="Timothy_Anondo" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>HhwkkIsU5n27ibqJN4gXwpPGaD8c8ZlY3b+e2llVGoI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Timothy_Anondo.exe.config" size="1835">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>aRVOXdis7+bY4bIPb4pPUICI9tg+4MfgiS/1Jq3ECz4=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-9L2F3D0\kabue" issuerKeyHash="a8c9c76f3f8484b3e2c5b1b3109c2601e47ae44b" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>NwYuLfw8/TzE4yM+xKcTJp2e7bIDyr2PPtvS0mh9cC0=</DigestValue></Reference></SignedInfo><SignatureValue>G7SVDqHi9OmY7lcvAUfrDAdpS41TwrjekQYEIQfU7UqKohcCxJYRh5PiKKvjruY21VuBUiL2JauUhFKtiCVtrJ/d6oO5xLvYbzPma/Qk12paVhUpsMMbNc6R5ST62w9DAO1JtQWA0YfD/1yk0KDh52D0mn0fG36VDLrHQpC7OJ4=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>rDfRnB24aYAKxta/YEZh0Oz2Io2lugHb1YyLmZz4ZPLdK1bkGTUMjgXMOioHqRLAxFsUgn81iZ9zXG0RQidxXdJGTqLCqHBZll0woecVFfkwCBH4wbrfA9STtdnMxRT7Dg7f03+ZKuLGXOX1UFvqLzAvxcwgrCHc1S3RMH9AUAc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="2d707d68d2d2db3e8fbdca03b2ed9e9d2613a7c43e23e3c43cfd3cfc2d2e0637" Description="" Url=""><as:assemblyIdentity name="Timothy_Anondo.exe" version="1.0.0.2" publicKeyToken="0a79f57b2491e442" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-9L2F3D0\kabue</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>zdMDD5lOA3Kqy3EnWLM6dQJp3VJ48adlJ06RgvZ3hIk=</DigestValue></Reference></SignedInfo><SignatureValue>nxRSkG2gPw0vJVAoY8DHkGLy1BBHVFuB+Za5i7Et4FS/Ci1NWxnYlXbVKKTlDQ3eHDWu+UOLPy5t5GitzOJ7ViBxlqyu2EVi60XIyBQMCSTo+BY2OHJ2JFOIhdLf+p3zgvsNwbXZlmYAuxeI35/6TGhjnYkPgKYnFcSmVNDMeQA=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>rDfRnB24aYAKxta/YEZh0Oz2Io2lugHb1YyLmZz4ZPLdK1bkGTUMjgXMOioHqRLAxFsUgn81iZ9zXG0RQidxXdJGTqLCqHBZll0woecVFfkwCBH4wbrfA9STtdnMxRT7Dg7f03+ZKuLGXOX1UFvqLzAvxcwgrCHc1S3RMH9AUAc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQKU5gRCqvdq5ETN4tiIJeuzANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtADkATAAyAEYAMwBEADAAXABrAGEAYgB1AGUwHhcNMTYwMjE2MDgyNzAwWhcNMTcwMjE1MTQyNzAwWjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtADkATAAyAEYAMwBEADAAXABrAGEAYgB1AGUwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKw30ZwduGmACsbWv2BGYdDs9iKNpboB29WMi5mc+GTy3StW5Bk1DI4FzDoqB6kSwMRbFIJ/NYmfc1xtEUIncV3SRk6iwqhwWZZdMKHnFRX5MAgR+MG63wPUk7XZzMUU+w4O39N/mSrixlzl9VBb6i8wL8XMIKwh3NUt0TB/QFAHAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAioSzjXdiKNQ67dhuDh2fM0CnccR/0OSwr+Oja2GIWUy6uHHhW/GOui1t62HfXgH689hNGIK9Ov8s6ghWVeiIKFAp6wbq5NipAkK+9IcMf3H0RR7Ns+4UcddHQEni8vknlddjKpJlV6C8g8JmH29bJbUaAT/SX3U1gWpJB6Mf1rQ=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
