@@ -14,6 +14,7 @@ namespace Timothy_Anondo
         private static UnitOfWork _unitOfWork;
         private static DataEntryForm _DataEntryForm;
         private static string pass;
+        public static string dbname = "Marketing_Analytics_Test_QWERTY";
 
         public static UnitOfWork _UnitOfWork
         {
@@ -72,10 +73,10 @@ namespace Timothy_Anondo
 
         public static DatabaseContext CreateConnection()
         {
-            
 
+            //pass = "mysql";
             DbProviderFactory factory = DbProviderFactories.GetFactory("MySql.Data.MySqlClient");
-            string connectionString = string.Format("Server=localhost; port=3306; Database=Timothy_Anondo; Uid=root; Pwd={0}", pass);
+            string connectionString = string.Format("Server=localhost; port=3306; Database={0}; Uid=root; Pwd={1}", dbname, pass);
             DbConnection conn = factory.CreateConnection();
             conn.ConnectionString = connectionString;
             //conn.Open();
@@ -84,7 +85,7 @@ namespace Timothy_Anondo
             try
             {
                 _context = new DatabaseContext(conn);
-                _context.Database.Connection.Open();
+                _context.Database.CreateIfNotExists();
                 return _context;
             }
             catch (Exception e)

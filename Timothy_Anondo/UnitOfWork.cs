@@ -101,7 +101,7 @@ namespace Timothy_Anondo
             MethodInfo generic = method.MakeGenericMethod(u);
             try
             {
-                return generic.Invoke(context.Database, new object[] { string.Format("SELECT * FROM {0}.{1}", "timothy_anondo", table), new object[] { } });
+                return generic.Invoke(context.Database, new object[] { string.Format("SELECT * FROM {0}.{1}", Program.dbname, table), new object[] { } });
 
             }
             catch (Exception e)
@@ -153,7 +153,7 @@ namespace Timothy_Anondo
 
 
 
-            string query = string.Format("INSERT INTO `{0}`.`{1}` {2} VALUES {3}", "timothy_anondo", name, k, v);
+            string query = string.Format("INSERT INTO `{0}`.`{1}` {2} VALUES {3}", Program.dbname, name, k, v);
             try
             {
                 context.Database.ExecuteSqlCommand(query);
